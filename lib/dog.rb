@@ -1,12 +1,13 @@
 class Dog
-  attr_writer :name
+  def initialize(name)
+    @name = name
   end
+
+  def getName()
+    return @name
+  end
+
   def bark
     puts "woof!"
   end
-
-fido = Dog.new
-
-p fido
-fido.name = "Fido"
 end
