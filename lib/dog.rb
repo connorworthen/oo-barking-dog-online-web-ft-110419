@@ -3,11 +3,13 @@ class Dog
     @name = name
   end
 
-  def getName()
-    return @name
+  def name
+    @name
   end
 
   def bark
     puts "woof!"
   end
 end
+
+fido = Dog.new
